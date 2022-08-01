@@ -1,0 +1,59 @@
+
+package cts.com.co.calculadoramaven.modelo;
+
+
+public class CalculadoraModelo {
+    
+    private Integer numeroUno;
+    private Integer numeroDos;
+    private Integer resultado;
+
+    public Integer getNumeroUno() {
+        return numeroUno;
+    }
+
+    public void setNumeroUno(Integer numeroUno) {
+        this.numeroUno = numeroUno;
+    }
+
+    public Integer getNumeroDos() {
+        return numeroDos;
+    }
+
+    public void setNumeroDos(Integer numeroDos) {
+        this.numeroDos = numeroDos;
+    }
+
+    public Integer getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(Integer resultado) {
+        this.resultado = resultado;
+    }
+    
+    public Integer sumar(){
+        resultado = numeroUno + numeroDos;
+        return resultado;
+    }
+    
+    public Integer resta(){
+        resultado = numeroUno - numeroDos;
+        return resultado;
+    }
+    
+    public Integer multiplicacion(){
+        resultado = numeroUno * numeroDos;
+        return resultado;
+    }
+    
+    public Integer divicion(){
+        resultado = numeroUno / numeroDos;
+        return resultado;
+    }
+    
+    public Integer CalcularModulo(){
+        resultado = numeroUno % numeroDos;
+        return resultado;
+    }
+}
